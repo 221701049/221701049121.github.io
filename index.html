@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay and Inlay UI Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Menu-based Program</h1>
+        </header>
+        <main>
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#home" class="menu-item" data-overlay="home-overlay">Home</a></li>
+                    <li><a href="#services" class="menu-item" data-overlay="services-overlay">Services</a></li>
+                    <li><a href="#about" class="menu-item" data-overlay="about-overlay">About</a></li>
+                    <li><a href="#contact" class="menu-item" data-overlay="contact-overlay">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="content">
+                <h2>Welcome</h2>
+                <p>Select a menu item to view more details.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Overlays -->
+    <div id="home-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Home</h2>
+            <p>Welcome to our home page!</p>
+            <button class="close-overlay">Close</button>
+        </div>
+    </div>
+    <div id="services-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Services</h2>
+            <p>Our services include web development, design, and more.</p>
+            <button class="close-overlay">Close</button>
+        </div>
+    </div>
+    <div id="about-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>About</h2>
+            <p>Learn more about our company and team.</p>
+            <button class="close-overlay">Close</button>
+        </div>
+    </div>
+    <div id="contact-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Contact</h2>
+            <p>Get in touch with us via email or phone.</p>
+            <button class="close-overlay">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
